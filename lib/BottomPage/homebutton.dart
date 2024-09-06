@@ -80,11 +80,18 @@ class _HomeButtonPageState extends State<HomeButtonPage> {
               ),
                 radius: double.infinity,
                 child: SizedBox(
-                  height: 30,
-                  child: Text("New Year"),
+                  height: 70,
+                  child: Text("New Year",style:TextStyle(
+                    fontWeight: FontWeight.bold,fontSize: 50,
+                  ),),
                 ),
               )
             ),
+            const SizedBox(height: 20,),
+            ClipRRect(
+                borderRadius: BorderRadius.circular(17),
+                child: Image.asset("assets/hny.jpg")),
+            const SizedBox(height: 15,),
           ],
         ),
       ),
